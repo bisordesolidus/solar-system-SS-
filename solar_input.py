@@ -47,12 +47,12 @@ def parse_star_parameters(line, star):
     type, R, color, m, x, y, Vx, Vy = line.split(' ')
 
     star.color = color
-    star.R = R
-    star.m = m
-    star.y = y
-    star.x = x
-    star.Vy = Vy
-    star.Vx = Vx
+    star.R = float(R)
+    star.m = float(m)
+    star.y = float(y)
+    star.x = float(x)
+    star.Vy = float(Vy)
+    star.Vx = float(Vx)
 
 def parse_planet_parameters(line, planet):
     """Считывает данные о планете из строки.
