@@ -44,7 +44,15 @@ def parse_star_parameters(line, star):
     **star** — объект звезды.
     """
 
-    pass  # FIXME: not done yet
+    type, R, color, m, x, y, Vx, Vy = line.split(' ')
+
+    star.color = color
+    star.R = R
+    star.m = m
+    star.y = y
+    star.x = x
+    star.Vy = Vy
+    star.Vx = Vx
 
 def parse_planet_parameters(line, planet):
     """Считывает данные о планете из строки.
